@@ -1,0 +1,143 @@
+.imglogo {
+    height: 18%;
+    float: right;
+    padding-top: 2%;
+    padding-right: 47%;
+}
+
+/* Display hover "Menu" */
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: #E74C3C;;
+}
+/****************************/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: #19243F;
+  opacity: 95%;
+  overflow-x: hidden; 
+  transition: 0.8s; 
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FF1B00;
+  display: block; 
+  transition: 0.4s; 
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body, html {
+    height: 100%;
+}
+
+.menubtn {
+    margin-left: 1%;
+    color:  #FF1B00;
+}
+
+.contact-title {
+    color: #ff1b00;
+}
+
+.contact-content {
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6%;
+    color: dimgray;
+    font-size: 130%;
+    opacity: 80%;
+}
+
+/**********************************************/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  opacity: 80%;
+  color: red;
+  resize: vertical 
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=button] {
+  background-color: #19243F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=button]:hover {
+  background-color: red;
+  transition-duration: 0.4s;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 1%;
+  background-color: #f2f2f2;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  border: 0px solid #ccc;
+  margin-left: 16%;
+  width: 70%;
+}
+
+label {
+    margin: 2%;
+}
+

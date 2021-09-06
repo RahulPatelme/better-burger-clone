@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+       <!-- Bootstrap CSS -->
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            
+     <!-- JQUERY -->
+    
+     <link rel = "stylesheet" type="text/css" href="../assets/css/forum.css">
+    
+    <link rel = "stylesheet" type="text/css" href="../assets/css/comments.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="JS/index.js"></script>
+   
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery.comment.js"></script>
+	<script type="text/javascript">
+		
+		var arr = [
+			{ id: 1, img: "../assets/img/profile.png", replyName: "Rahul", beReplyName: "Anonymous", content: "Had a great experience at the Vulcan Lane store. Will surely visit back!", time: "2020-07-17 11:42:53", address: "Auckland",  browse: "", replyBody: [] },
+			{ id: 2, img: "../assets/img/profile.png", replyName: "Alex", beReplyName: "", content: "BetterBurgers taste so good!", time: "2020-07-17 11:42:53", address: "Auckland",  browse: "", replyBody: [{ id: 3, img: "", replyName: "Anonymous", beReplyName: "Alex", content: "I Agree!", time: "2020-07-19 11:42:53", address: "", browse: "" }] },
+			{ id: 3, img: "../assets/img/profile.png", replyName: "TomTheKing223", beReplyName: "Tom", content: "Nice!", time: "2020-07-16 11:42:53", address: "Auckland",  browse: "", replyBody: [] }
+		];
+		$(function () {
+			$(".comment-list").addCommentList({ data: arr, add: "" });
+			$("#comment").click(function () {
+				var obj = new Object();
+				obj.img = "../assets/img/profile.png";
+				obj.replyName = "Unknown";
+				obj.content = $("#content").val();
+				obj.browse = "";
+				obj.replyBody = "";
+				$(".comment-list").addCommentList({ data: [], add: obj });
+			});
+		})
+	</script>
+</head>
+ <body>
+     
+      <img class = "imglogo" src = "../assets/img/logo-bg.png">
+      <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+            <a href="./home.html">Home</a>
+            <a href="./menu.html">Our Menu</a>
+            <a href="./locations.html">Locations</a>
+            <a href="./contact.html">Contact</a>
+            <a class="active" href="#">Forum</a> 
+         </div>
+      </div>
+      <br>
+      <span class = "menubtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <script>
+         function openNav() {
+           document.getElementById("myNav").style.height = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("myNav").style.height = "0%";
+         }
+      </script>
+     
+     <div class="forum-title">
+        <p><strong>*NEW!* COMMENT BOARD</strong></p>
+         </div>
+    
+    <div class="forum-firstline">
+            <p>We have introduced a new comment board for our Superfans. Chat Away!</p>
+    </div>
+     
+     <div class="container1">
+		<div class="commentbox">
+			<textarea cols="40" rows="20" placeholder="Comment..." class="mytextarea" id="content"></textarea>
+            <div class="btnc btn-info pull-right" id="comment">Submit</div>
+		</div>
+		<div class="comment-list">
+		</div>
+	</div>
+</body>
+</html>

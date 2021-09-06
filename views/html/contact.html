@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       
+       <!-- Required meta tags -->
+      
+       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+       <!-- Bootstrap CSS -->
+       
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel = "stylesheet" href="../assets/css/contact.css">
+   </head>
+   <body>
+      <img class = "imglogo" src = "../assets/img/logo-bg.png">
+      <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+            <a href="./home.html">Home</a>
+            <a href="./menu.html">Our Menu</a>
+            <a href="./locations.html">Locations</a>
+            <a class="active" href="#">Contact</a>
+            <a href="./forum.html">Forum</a> 
+         </div>
+      </div>
+      <br>
+      <span class = "menubtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <script>
+         function openNav() {
+           document.getElementById("myNav").style.height = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("myNav").style.height = "0%";
+         }
+                 
+      </script>
+       
+        <div class="contact-content">
+         <p class="contact-title"><strong>GET IN TOUCH</strong></p>
+         <p>We'd love to hear any feedback or inquiries you have about BetterBurger!
+         </p>
+      </div>
+       
+      <!-- CONTACT -->
+      <div class="container">
+         <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 100%">
+             
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width: 100%">
+             
+            <label for ="email">Email</label> 
+            <input type="text" id="email" name="email" placeholder="You Email ID.." style="width: 100%">
+            
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style= "width: 100%"></textarea>
+            <input type="button" id ="submit" value="Submit" style="width: 100%">
+            <script>
+               $(document).ready(function(){
+               // Get value on button click and show alert
+               $("#submit").click(function(){
+               var fname = $("#fname").val();
+               var subject = $("#subject").val();
+               if(fname==""){
+               alert("Please enter your name!");
+               }
+               else if (subject=="") {
+               alert("Please do not leave the subject blank!");
+               }
+               else{
+               alert("Thank you " + fname +", we will get in touch with you soon.");
+               }
+               });
+               });
+            </script>
+         </form>
+      </div>
+   </body>

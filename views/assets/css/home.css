@@ -1,0 +1,157 @@
+/* Display hover "Menu" */
+.hide {
+    display: none;
+}
+
+.myDIV:hover + .hide {
+    display: block;
+    color: #e74c3c;
+}
+
+/****************************/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #19243F;
+    opacity: 95%;
+    overflow-x: hidden;
+    transition: 0.8s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff1b00;
+    display: block;
+    transition: 0.4s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+body, html {
+    height: 100%;
+}
+
+.menubtn {
+    margin-left: 1%;
+    color: #ff1b00;
+}
+/* The hero image */
+.hero-image {
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Burger-bg.png");
+    height: 72%;
+    position: relative;
+    background-color: #ff1b00;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.para {
+    float: right;
+    padding-right: 2%;
+    color: #ff1b00;
+    font-size: 32px;
+}
+
+.imglogo {
+    height: 18%;
+    float: right;
+    padding-top: 2%;
+    padding-right: 47%;
+}
+
+.home-title {
+    color: #ff1b00;
+}
+
+.home-content {
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6%;
+    color: dimgray;
+    font-size: 140%;
+    opacity: 80%;
+}
+
+.home-content-image {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+}
+
+.home-image-last {
+    background-image: url(../img/home-last.jpg);
+    height: 80%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.ending-title {
+    text-align: center;
+    color: #ff1b00;
+    font-size: 160%;
+    opacity: 80%;
+}

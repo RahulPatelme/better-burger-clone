@@ -1,0 +1,100 @@
+.imglogo {
+    height: 18%;
+    float: right;
+    padding-top: 2%;
+    padding-right: 47%;
+    margin-bottom: 4%;
+}
+
+/* Display hover "Menu" */
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: #E74C3C;;
+}
+/****************************/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: #19243F;
+  opacity: 95%;
+  overflow-x: hidden; 
+  transition: 0.8s; 
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FF1B00;
+  display: block; 
+  transition: 0.4s; 
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body, html {
+    height: 100%;
+}
+
+.menubtn {
+    margin-left: 1%;
+    color:  #FF1B00;
+}
+
+.forum-title {
+    margin-top: 6%;
+    margin-bottom: 1%;
+    text-align: center;
+    color: #ff1b00;
+    font-size: 160%;
+    opacity: 80%;
+}
+
+.forum-firstline {
+    margin-top: 0%;
+    margin-left: 8%;
+    margin-right: 20%;
+    margin-bottom: 6%;
+    color: dimgray;
+    font-size: 120%;
+    opacity: 80%;
+}
+

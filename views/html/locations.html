@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Bootstrap CSS -->
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+   <!-- JQUERY -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <link rel = "stylesheet" type="text/css" href="../assets/css/locations.css">
+    
+    <link rel = "stylesheet" type="text/css" href="../assets/css/comments.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="JS/index.js"></script>
+   
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery.comment.js"></script>
+	<script type="text/javascript">
+		
+    </script>
+    </head>
+<body>
+      <img class = "imglogo" src = "../assets/img/logo-bg.png">
+      <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+            <a href="./home.html">Home</a>
+            <a href="./menu.html">Our Menu</a>
+            <a class="active" href="#">Locations</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./forum.html">Forum</a> 
+         </div>
+      </div>
+      <br>
+      <span class = "menubtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <script>
+         function openNav() {
+           document.getElementById("myNav").style.height = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("myNav").style.height = "0%";
+         }
+      </script>
+    
+    <div class="location-title">
+        <p><strong>Our Locations</strong></p>
+         </div>
+    
+          <div class="locations-firstline">
+            <p>Here are our stores, if there’s not one near you yet, we hope there’s one soon.</p>
+    </div>
+    <!--TABLE-->
+  <section id="tablesection">
+    <div class="tablesec">
+      <table class="table">
+        <!-- FIRST ROW -->
+        <tr>
+          <th>
+            <div class="a">Name</div>
+          </th>
+          <th>
+            <div class="b">Description</div>
+          </th>
+          <th>
+            <div class="c">On Map</div>
+          </th>
+          <th>
+            <div class="d">Rating</div>
+          </th>
+          <!-- SECOND ROW -->
+        <tr>
+          <td>
+            <div class="center">
+              <div id="a1"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="a2"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="a3"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="a4">
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Perfect' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- THIRD ROW -->
+        <tr>
+          <td>
+            <div class="center">
+              <div id="b1"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="b2"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="b3"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="b4">
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Perfect' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- FORTH ROW -->
+        <tr>
+          <td>
+            <div class="center">
+              <div id="c1"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="c2"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="c3"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="c4">
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Perfect' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- FIFTH ROW -->
+        <tr>
+          <td>
+            <div class="center">
+              <div id="d1"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="d2"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="d3"></div>
+            </div>
+          </td>
+          <td>
+            <div class="center">
+              <div id="d4">
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Perfect' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </section>
+    
+  <!-- ----------------------------------------------------------------------- -->
+
+     <script src="../JS/stars.js" charset="utf-8"></script>\
+     <script src="../JS/fetchitem2.js" charset="utf-8"></script>
+    
+</body>
+</html>
